@@ -1,1 +1,38 @@
-{}
+{
+  "chronic_inflammation": {
+    "displayName": "Chronic Inflammation",
+    "biomarkers": ["crp", "wbc"],
+    "mechanism": "Elevated CRP and WBC reflect systemic low-grade inflammation — 'inflammaging' — a core hallmark of biological aging associated with tissue damage, immune dysregulation, and accelerated mortality risk.",
+    "citation": "López-Otín et al., Cell, 2023"
+  },
+  "deregulated_nutrient_sensing": {
+    "displayName": "Deregulated Nutrient Sensing",
+    "biomarkers": ["glucose"],
+    "mechanism": "Chronically elevated glucose signals insulin resistance and impaired nutrient-sensing pathways (mTOR, AMPK, insulin/IGF-1), a hallmark linked to accelerated cellular aging and metabolic disease.",
+    "citation": "López-Otín et al., Cell, 2023"
+  },
+  "loss_of_proteostasis": {
+    "displayName": "Loss of Proteostasis",
+    "biomarkers": ["albumin"],
+    "mechanism": "Low serum albumin reflects impaired protein synthesis and reduced capacity to maintain protein homeostasis — a marker of hepatic function and systemic proteostatic stress.",
+    "citation": "López-Otín et al., Cell, 2023"
+  },
+  "mitochondrial_dysfunction": {
+    "displayName": "Mitochondrial Dysfunction",
+    "biomarkers": ["creatinine"],
+    "mechanism": "Serum creatinine is a proxy for muscle mass and mitochondrial energy output. Declining creatinine in older adults often reflects sarcopenia and reduced mitochondrial capacity.",
+    "citation": "López-Otín et al., Cell, 2023"
+  },
+  "cellular_senescence": {
+    "displayName": "Cellular Senescence",
+    "biomarkers": ["rdw", "mcv", "alp"],
+    "mechanism": "Elevated RDW and MCV reflect hematopoietic stress and impaired red blood cell turnover — signatures of stem cell exhaustion and cellular senescence. Elevated ALP may reflect hepatic or bone senescent signaling.",
+    "citation": "López-Otín et al., Cell, 2023"
+  },
+  "altered_intercellular_communication": {
+    "displayName": "Immune Aging",
+    "biomarkers": ["lymphocytePct"],
+    "mechanism": "Declining lymphocyte percentage reflects immunosenescence — the age-related deterioration of adaptive immunity and altered intercellular communication between immune cells.",
+    "citation": "López-Otín et al., Cell, 2023"
+  }
+}
