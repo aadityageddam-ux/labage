@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# NHANES raw XPT cache (large binary downloads — regenerate with scripts/process_nhanes.py)
+/.nhanes_cache/
