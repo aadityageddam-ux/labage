@@ -45,19 +45,27 @@ jobs:
           files: ./coverage/coverage-final.json
           fail_ci_if_error: false
 
-  deploy:
-    needs: test-and-build
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
-
-    steps:
-      - uses: actions/checkout@v5
-
-      - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          scope: ${{ secrets.VERCEL_ORG_ID }}
+  # TO ENABLE VERCEL AUTO-DEPLOY:
+  # 1. Go to GitHub repo Settings > Secrets and variables > Actions
+  # 2. Add these secrets:
+  #    - VERCEL_TOKEN: your Vercel API token (from vercel.com/account/tokens)
+  #    - VERCEL_ORG_ID: your Vercel organization/team ID
+  #    - VERCEL_PROJECT_ID: your Vercel project ID
+  # 3. Uncomment the deploy job below
+  #
+  # deploy:
+  #   needs: test-and-build
+  #   runs-on: ubuntu-latest
+  #   if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+  #
+  #   steps:
+  #     - uses: actions/checkout@v5
+  #
+  #     - name: Deploy to Vercel
+  #       uses: amondnet/vercel-action@v25
+  #       with:
+  #         vercel-token: ${{ secrets.VERCEL_TOKEN }}
+  #         github-token: ${{ secrets.GITHUB_TOKEN }}
+  #         vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+  #         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+  #         scope: ${{ secrets.VERCEL_ORG_ID }}
