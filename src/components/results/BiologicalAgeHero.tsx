@@ -52,23 +52,23 @@ export function BiologicalAgeHero({
     >
       {/* Two large numbers */}
       <div className="flex items-end justify-between gap-4">
-        <div>
-          <p className="mb-1 text-xs font-medium uppercase tracking-widest text-[#71717A]">
+        <div className="min-w-0">
+          <p className="mb-1 whitespace-nowrap text-xs font-medium uppercase tracking-widest text-[#71717A]">
             Biological Age
           </p>
           <p
             className="font-serif italic leading-none"
-            style={{ fontSize: 'clamp(4rem, 12vw, 6rem)', color: ageColor }}
+            style={{ fontSize: 'clamp(3.5rem, 16vw, 6rem)', color: ageColor }}
           >
             {biologicalAge.toFixed(1)}
           </p>
         </div>
-        <div className="text-right">
-          <p className="mb-1 text-xs font-medium uppercase tracking-widest text-[#71717A]">
-            Chronological Age
+        <div className="flex-shrink-0 text-right">
+          <p className="mb-1 whitespace-nowrap text-xs font-medium uppercase tracking-widest text-[#71717A]">
+            Chron. Age
           </p>
           <p className="leading-none font-semibold text-[#71717A]"
-             style={{ fontSize: 'clamp(2.5rem, 7vw, 3.5rem)' }}>
+             style={{ fontSize: 'clamp(2rem, 10vw, 3.5rem)' }}>
             {chronologicalAge}
           </p>
         </div>
