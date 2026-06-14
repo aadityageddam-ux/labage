@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Instrument_Serif, JetBrains_Mono } from 'next/font/google'
+import { TooltipProvider } from '@/components/ui/tooltip'
 import './globals.css'
 
 const inter = Inter({
@@ -35,7 +36,11 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-[#FAFAFA] text-[#18181B]">{children}</body>
+      <body className="min-h-full bg-[#FAFAFA] text-[#18181B]">
+          <TooltipProvider delayDuration={200}>
+            {children}
+          </TooltipProvider>
+        </body>
     </html>
   )
 }
