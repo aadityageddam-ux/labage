@@ -13,6 +13,6 @@
   "env": {
     "NEXT_PUBLIC_APP_NAME": "LabAge",
     "NEXT_PUBLIC_APP_URL": "https://labage.app"
-  },
-  "envPrefix": "NEXT_PUBLIC_"
+  }
+
 }
